@@ -15,9 +15,6 @@ def send_message(message):
     response = requests.get(url)
     return response.json()
 
-# response = send_message('Hello!')
-# print(response)
-
 def check_server(url):
   try:
     response = requests.get(url, timeout=0.5)
